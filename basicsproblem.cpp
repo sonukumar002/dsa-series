@@ -16,15 +16,38 @@
 // }
 
 // 2 WAP to check A character is an alphabet or not
-#include <bits/stdc++.h> 
-int findCase(char ch) {
-    // Write your code here.
-    if(islower(ch)){
-        return 0;
+// #include <bits/stdc++.h> 
+// int findCase(char ch) {
+//     // Write your code here.
+//     if(islower(ch)){
+//         return 0;
+//     }
+//     if(isupper(ch)){
+//         return 1;
+//     }
+//     else
+//     return -1;
+// }
+// 16.	WAP to find out Reverse of a given number
+#include <iostream>
+#include <climits>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int rev_num = 0;
+    int last_digit = 0;
+    while (n != 0)
+    {
+        last_digit = n % 10;
+         if (rev_num > (INT_MAX / 10) || rev_num < (INT_MIN / 10))
+        {
+            return 0;
+        }
+        rev_num = (rev_num * 10) + last_digit;
+        n = n / 10;
     }
-    if(isupper(ch)){
-        return 1;
+    cout<<rev_num;
     }
-    else
-    return -1;
-}
+
