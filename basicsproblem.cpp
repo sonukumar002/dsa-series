@@ -29,25 +29,41 @@
 //     return -1;
 // }
 // 16.	WAP to find out Reverse of a given number
-#include <iostream>
-#include <climits>
+// #include <iostream>
+// #include <climits>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int rev_num = 0;
+//     int last_digit = 0;
+//     while (n != 0)
+//     {
+//         last_digit = n % 10;
+//          if (rev_num > (INT_MAX / 10) || rev_num < (INT_MIN / 10))
+//         {
+//             return 0;
+//         }
+//         rev_num = (rev_num * 10) + last_digit;
+//         n = n / 10;
+//     }
+//     cout<<rev_num;
+//     }
+
+// 15.	WAP to find out Sum of numbers in a given range
+#include<iostream>
 using namespace std;
-int main()
-{
-    int n;
-    cin >> n;
-    int rev_num = 0;
-    int last_digit = 0;
-    while (n != 0)
-    {
-        last_digit = n % 10;
-         if (rev_num > (INT_MAX / 10) || rev_num < (INT_MIN / 10))
-        {
-            return 0;
-        }
-        rev_num = (rev_num * 10) + last_digit;
-        n = n / 10;
+int main(){
+    int n,m;
+    cin>>n>>m;
+    int mini=min(n,m);
+    int maxm=max(n,m);
+    int sum=0;
+    for(int i=mini;i<=maxm;i++){
+        sum+=i;
     }
-    cout<<rev_num;
-    }
+    cout<<sum;
+}
+
 
