@@ -9,4 +9,9 @@ topic name
 	    In-place manipulation, often for sorted arrays (e.g., removing duplicates)
 •	Sliding Window:
 	    Subarray problems, finding maximum/minimum within a window
+             problem statement
+             (https://www.naukri.com/code360/problems/maximum-points-from-cards_8391016)
+             solution
+             [Solution](./sliding_window.cpp) 
+
 
