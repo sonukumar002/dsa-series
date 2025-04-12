@@ -51,19 +51,36 @@
 //     cout<<rev_num;
 //     }
 
-// 15.	WAP to find out Sum of numbers in a given range
-#include<iostream>
-using namespace std;
-int main(){
-    int n,m;
-    cin>>n>>m;
-    int mini=min(n,m);
-    int maxm=max(n,m);
-    int sum=0;
-    for(int i=mini;i<=maxm;i++){
-        sum+=i;
+// 	WAP to find out Sum of numbers in a given range
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n,m;
+//     cin>>n>>m;
+//     int mini=min(n,m);
+//     int maxm=max(n,m);
+//     int sum=0;
+//     for(int i=mini;i<=maxm;i++){
+//         sum+=i;
+//     }
+//     cout<<sum;
+// }
+
+// 42.	WAP to identify an user given number is Perfect number or not
+#include <bits/stdc++.h>
+bool perfectNumber(int k) {
+  // Write your code here.
+  int num = k;
+  long long sum = 1;
+  for (int i = 2; i <=sqrt(k); i++) {
+    if (k % i == 0) {
+      sum +=i;
+      if (i != k / i) {
+        sum += k / i;
+      }
     }
-    cout<<sum;
+  }
+  return(sum==num);
 }
 
 
