@@ -67,20 +67,60 @@
 // }
 
 // 42.	WAP to identify an user given number is Perfect number or not
-#include <bits/stdc++.h>
-bool perfectNumber(int k) {
-  // Write your code here.
-  int num = k;
-  long long sum = 1;
-  for (int i = 2; i <=sqrt(k); i++) {
-    if (k % i == 0) {
-      sum +=i;
-      if (i != k / i) {
-        sum += k / i;
-      }
+// #include <bits/stdc++.h>
+// bool perfectNumber(int k) {
+//   // Write your code here.
+//   int num = k;
+//   long long sum = 1;
+//   for (int i = 2; i <=sqrt(k); i++) {
+//     if (k % i == 0) {
+//       sum +=i;
+//       if (i != k / i) {
+//         sum += k / i;
+//       }
+//     }
+//   }
+//   return(sum==num);
+// }
+
+
+// 46.	WAP to identify Abundant number or not
+// An abundant number (or excessive number) is a positive integer that is smaller than the sum of its proper divisors (all divisors excluding the number itself). In other words, the sum of the proper divisors of an abundant number exceeds the number.
+// Example:
+// •	12 is an abundant number. Its divisors are 1, 2, 3, 4, and 6 (excluding 12 itself). The sum of these divisors is:
+// 1+2+3+4+6=161 + 2 + 3 + 4 + 6 = 161+2+3+4+6=16
+// Since 16 is greater than 12, 12 is an abundant number.
+#include<iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int x;
+    cin >> x;
+    int sum = 1;
+    
+    for (int i = 2; i < sqrt(x); i++)
+    {
+        if (x % i == 0)
+        {
+            sum += i;
+            if (i != x / i)
+            {
+                sum += x / i;
+            }
+        }
     }
-  }
-  return(sum==num);
+    if(sum>x){
+        cout<<"yes";
+    }
+    else{
+        cout<<"no";
+    }
 }
+
+
+
+
 
 
