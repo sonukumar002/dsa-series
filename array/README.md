@@ -1,4 +1,8 @@
 # Arrays 🧮
+basics
+problem:(https://www.naukri.com/code360/problems/interview-shuriken-41-move-zeroes-to-end_240143)
+		
+
 topic name
 •	Sorting:
 	    QuickSort: Efficient average-case time complexity (O(nlog n))

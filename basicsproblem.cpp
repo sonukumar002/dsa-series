@@ -90,35 +90,56 @@
 // •	12 is an abundant number. Its divisors are 1, 2, 3, 4, and 6 (excluding 12 itself). The sum of these divisors is:
 // 1+2+3+4+6=161 + 2 + 3 + 4 + 6 = 161+2+3+4+6=16
 // Since 16 is greater than 12, 12 is an abundant number.
-#include<iostream>
-#include <math.h>
-using namespace std;
+// #include<iostream>
+// #include <math.h>
+// using namespace std;
 
-int main()
-{
-    int x;
-    cin >> x;
-    int sum = 1;
+// int main()
+// {
+//     int x;
+//     cin >> x;
+//     int sum = 1;
     
-    for (int i = 2; i < sqrt(x); i++)
-    {
-        if (x % i == 0)
-        {
-            sum += i;
-            if (i != x / i)
-            {
-                sum += x / i;
-            }
-        }
-    }
-    if(sum>x){
-        cout<<"yes";
-    }
-    else{
-        cout<<"no";
-    }
-}
+//     for (int i = 2; i < sqrt(x); i++)
+//     {
+//         if (x % i == 0)
+//         {
+//             sum += i;
+//             if (i != x / i)
+//             {
+//                 sum += x / i;
+//             }
+//         }
+//     }
+//     if(sum>x){
+//         cout<<"yes";
+//     }
+//     else{
+//         cout<<"no";
+//     }
+// }
 
+// move zeros to the end 
+
+// https://www.naukri.com/code360/problems/interview-shuriken-41-move-zeroes-to-end_240143
+// void pushZerosAtEnd(vector<int> &arr) 
+// {
+// 	// Write your code here.
+// 	int n=arr.size();
+// 	int i=0;
+// 	for(int j=0;j<n;j++){
+// 		if(arr[j]!=0){
+// 			// i++;
+// 			arr[i]=arr[j];
+// 			i++;
+// 		}
+// 	}
+// 	while(i<n){
+// 		// i++;
+// 		arr[i]=0;
+// 		i++;
+// 	}
+// }
 
 
 
