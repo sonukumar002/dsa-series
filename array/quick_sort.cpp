@@ -41,4 +41,19 @@ vector<int> quicksort(vector<int>arr){
     return arr;
 }
 
-int main(){}
+int main(){
+    int n;
+    cout<<"enter the no of elements";
+    cin>>n;
+    vector<int>arr(n);
+    cout<<"enter"<<n<<"elements:\n";
+    for(int i=0;i<n;++i){
+        cin>>arr[i];
+    }
+    vector<int>sortedarr=quicksort(arr);
+    for(int num:sortedarr){
+    cout<<num<<" ";
+    }
+    cout<<endl;
+    return 0;
+}
