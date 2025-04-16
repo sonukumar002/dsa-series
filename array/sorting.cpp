@@ -1,2 +1,0 @@
-// quick short
-// merge sort

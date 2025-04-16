@@ -6,6 +6,8 @@ problem:(https://www.naukri.com/code360/problems/interview-shuriken-41-move-zero
 topic name
 •	Sorting:
 	    QuickSort: Efficient average-case time complexity (O(nlog n))
+			problem statement:(https://www.naukri.com/code360/problems/quick-sort_983625)
+			[solution](./quick_sort.cpp)
 	    MergeSort: Stable sort, useful when order matters (O(nlog n))
 •	Searching:
 	    Binary Search: Fast search in sorted arrays (O(log n))
