@@ -9,6 +9,8 @@ topic name
 			problem statement:(https://www.naukri.com/code360/problems/quick-sort_983625)
 			[solution](./quick_sort.cpp)
 	    MergeSort: Stable sort, useful when order matters (O(nlog n))
+			problem statement:(https://www.naukri.com/code360/problems/merge-sort_920442)
+			[solution](./merge_sort.cpp)
 •	Searching:
 	    Binary Search: Fast search in sorted arrays (O(log n))
 •	Two Pointers:
