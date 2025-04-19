@@ -14,7 +14,9 @@ topic name
 •	Searching:
 	    Binary Search: Fast search in sorted arrays (O(log n))
 		problem statement:(https://www.naukri.com/code360/problems/sort-an-array-of-0s-1s-and-2s_892977)
-		[solution](./binary_search.cpp)
+		[solution](./binary_search1.cpp)
+		[problem statement](https://www.naukri.com/code360/problems/square-root-of-an-integer_1089689)
+		[s0lution](array/binary_search/binary_search2.cpp)
 •	Two Pointers:
 	    In-place manipulation, often for sorted arrays (e.g., removing duplicates)
 •	Sliding Window:
