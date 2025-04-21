@@ -9,4 +9,9 @@
 
     <!-- Find Minimum in Rotated Sorted Array -->
 [problem statemet](https://www.naukri.com/code360/problems/rotated-array_1093219?leftPanelTabValue=PROBLEM&customSource=studio_nav)
-[solution]()
+[solution](binary_search3.cpp)
+
+    <!--  Find Peak Element -->
+ [problem statement](https://www.naukri.com/code360/problems/find-peak-element_1081482)
+ [solution](.binary_search4.cpp)
+
